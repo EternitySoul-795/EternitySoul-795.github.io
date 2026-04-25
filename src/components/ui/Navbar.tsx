@@ -30,7 +30,7 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 py-4 md:px-10 md:py-5">
         {/* Logo */}
-        <a href="#" className="group flex items-center gap-2">
+        <a href="/not-found" className="group flex items-center gap-2">
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-violet-400 opacity-60" />
             <span className="relative inline-flex h-2 w-2 rounded-full bg-violet-500" />

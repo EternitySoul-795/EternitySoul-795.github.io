@@ -13,7 +13,7 @@ export function Footer() {
       <div className="mx-auto max-w-[1200px] px-6 md:px-12">
         <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 self-start">
+          <a href="/not-found" className="flex items-center gap-2 self-start">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full rounded-full bg-violet-400 opacity-40" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-violet-500" />

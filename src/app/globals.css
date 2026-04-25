@@ -108,6 +108,61 @@ body { text-rendering: optimizeLegibility; }
   }
 }
 
+/* ── Discord Join Now button ─────────────────────────────────────────── */
+.join-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #7c3aed, #9333ea);
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.join-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(124,58,237,0.5);
+}
+.join-outline {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(255,255,255,0.18);
+  pointer-events: none;
+}
+.join-state {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+.join-state--hidden {
+  display: none;
+}
+.join-icon {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.join-text {
+  display: flex;
+  gap: 0px;
+  margin: 0;
+}
+.join-text span {
+  display: inline-block;
+  animation: join-slide-up 0.35s ease calc(var(--i) * 0.04s) both;
+}
+@keyframes join-slide-up {
+  from { transform: translateY(6px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
+
 /* ── Ping dot (availability) ─────────────────────────────────────────── */
 @keyframes ping-slow {
   75%, 100% { transform: scale(2); opacity: 0; }
