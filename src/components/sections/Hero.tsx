@@ -139,24 +139,24 @@ export function Hero() {
           }} />
         </div>
 
-        {/* ── Mobile text readability overlay ──────────────────────────────── */}
+        {/* ── Text readability overlay — mobile & tablet ───────────────────── */}
         <div
-          className="pointer-events-none absolute inset-0 z-10 md:hidden"
+          className="pointer-events-none absolute inset-0 z-10 lg:hidden"
           style={{
             background:
-              "linear-gradient(to right, rgba(5,5,11,0.88) 0%, rgba(5,5,11,0.6) 55%, rgba(5,5,11,0.15) 100%)",
+              "linear-gradient(to right, rgba(5,5,11,0.90) 0%, rgba(5,5,11,0.55) 50%, rgba(5,5,11,0.08) 100%)",
           }}
         />
 
-        {/* ── Video — full screen on mobile, right half on desktop ─────────── */}
+        {/* ── Video — full on mobile, wide on tablet, half on desktop ──────── */}
         <div
           ref={videoWrapRef}
-          className="hero-video-wrap absolute right-0 top-0 h-full w-full md:w-1/2"
+          className="hero-video-wrap absolute right-0 top-0 h-full w-full md:w-[68%] lg:w-1/2"
           style={{ opacity: 0.72 }}
         >
           <video
             ref={videoRef}
-            className="h-full w-full object-cover object-center md:object-right"
+            className="h-full w-full object-cover object-center lg:object-right"
             src="/hero.mp4"
             muted
             playsInline

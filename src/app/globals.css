@@ -77,13 +77,26 @@ body { text-rendering: optimizeLegibility; }
 
 /* ── Hero video responsive mask ──────────────────────────────────────── */
 .hero-video-wrap {
-  /* Mobile: top/bottom fade only — left edge stays open so the full face is visible */
+  /* Mobile: top/bottom fade only — full face visible */
   mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%);
   -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%);
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .hero-video-wrap {
-    /* Desktop: composite left + top/bottom fade */
+    /* Tablet: very gentle left fade so full face stays visible in wider container */
+    mask-image:
+      linear-gradient(to right, transparent 0%, black 6%, black 96%, transparent 100%),
+      linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%);
+    mask-composite: intersect;
+    -webkit-mask-image:
+      linear-gradient(to right, transparent 0%, black 6%, black 96%, transparent 100%),
+      linear-gradient(to bottom, transparent 0%, black 10%, black 85%, transparent 100%);
+    -webkit-mask-composite: source-in;
+  }
+}
+@media (min-width: 1024px) {
+  .hero-video-wrap {
+    /* Desktop: stronger left fade blends into text area */
     mask-image:
       linear-gradient(to right, transparent 0%, black 22%, black 80%, transparent 100%),
       linear-gradient(to bottom, transparent 0%, black 12%, black 82%, transparent 100%);
