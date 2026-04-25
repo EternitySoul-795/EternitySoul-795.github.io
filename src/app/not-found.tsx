@@ -158,7 +158,7 @@ export default function NotFoundPage() {
         }
 
         .astronaut {
-          width: 400px;
+          width: 600px;
           display: flex;
           align-items: center;
           justify-content: center;
