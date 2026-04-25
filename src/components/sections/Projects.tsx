@@ -11,6 +11,7 @@ const PROJECTS = [
     number: "01",
     title: "EchoSpace",
     subtitle: "AI Memory Visualizer",
+    href: "https://echo-space-3-d.vercel.app",
     description:
       "An AI-powered 3D environment where your memories become navigable spatial experiences. Language models process memory inputs and render them as explorable 3D nodes — blending intelligence with immersive design.",
     tags: ["Next.js", "Three.js", "OpenAI", "Framer Motion"],
@@ -22,14 +23,15 @@ const PROJECTS = [
     icon: "⬡",
   },
   {
-    id: "firefighter",
+    id: "lordCloud",
     number: "02",
-    title: "Fire-Fighting Robot",
-    subtitle: "Arduino Autonomous System",
+    title: "LordCloud",
+    subtitle: "Cloud Infrastructure Platform",
+    href: "https://lordcloud.vercel.app",
     description:
-      "Built an autonomous fire-detection and extinguishing robot using Arduino. Flame sensors, IR proximity detection, servo-controlled water pump — all programmed from scratch.",
-    tags: ["Arduino", "C++", "Sensors", "Embedded"],
-    status: "Completed",
+      "An advanced cloud computing platform designed to deliver high-performance, scalable, and secure infrastructure for modern applications. LordCloud integrates intelligent automation, real-time monitoring, and seamless deployment pipelines — enabling developers to build, deploy, and scale without limitations.",
+    tags: ["Next.js", "Three.js", "Node.js", "MongoDB", "Docker"],
+    status: "In Development",
     color: "#22d3ee",
     glow: "rgba(6,182,212,0.22)",
     border: "rgba(6,182,212,0.2)",
@@ -37,14 +39,15 @@ const PROJECTS = [
     icon: "◈",
   },
   {
-    id: "graphicDesign",
+    id: "publicSafety",
     number: "03",
-    title: "Design Portfolio",
-    subtitle: "Brand Identities & UI",
+    title: "AI for Public Safety",
+    subtitle: "Smart Monitoring System",
+    href: "https://public-safety-ai.vercel.app",
     description:
-      "A collection of brand identity systems, social media kits, UI screens, and motion assets designed for clients. From logo systems to full Figma UI specs — brand-first thinking throughout.",
-    tags: ["Figma", "Photoshop", "Brand", "Motion"],
-    status: "Ongoing",
+      "An AI-powered public safety platform designed to monitor environments, detect potential threats, and respond in real time. Using computer vision and intelligent alert systems, it enhances security across public spaces — enabling faster response, improved awareness, and proactive risk prevention.",
+    tags: ["Python", "OpenCV", "YOLO", "TensorFlow", "Arduino"],
+    status: "In Development",
     color: "#fbbf24",
     glow: "rgba(245,158,11,0.2)",
     border: "rgba(245,158,11,0.2)",
@@ -89,15 +92,18 @@ export function Projects() {
         {/* Project cards */}
         <div className="flex flex-col gap-5">
           {PROJECTS.map((p, i) => (
-            <motion.div
+            <motion.a
               key={p.id}
+              href={p.href}
+              target="_blank"
+              rel="noopener noreferrer"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ delay: i * 0.08, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
               onMouseEnter={() => setHovered(p.id)}
               onMouseLeave={() => setHovered(null)}
-              className="group relative cursor-default overflow-hidden rounded-[20px] border transition-all duration-500"
+              className="group relative cursor-pointer overflow-hidden rounded-[20px] border transition-all duration-500"
               style={{
                 borderColor: hovered === p.id ? p.border : "rgba(255,255,255,0.06)",
                 background: hovered === p.id
@@ -177,7 +183,7 @@ export function Projects() {
                   </motion.div>
                 </div>
               </div>
-            </motion.div>
+            </motion.a>
           ))}
         </div>
       </div>
