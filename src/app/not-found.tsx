@@ -71,12 +71,13 @@ export default function NotFoundPage() {
           color: white;
           display: flex;
           justify-content: space-between;
-          padding: 60px;
+          padding: 0px;
           overflow: hidden;
           font-family: "Poppins", sans-serif;
         }
 
         .content {
+        padding: 100px;
           max-width: 500px;
         }
 
@@ -87,7 +88,7 @@ export default function NotFoundPage() {
         }
 
         .error-text {
-          font-size: 28px;
+          font-size: 58px;
           color: #c4b5fd;
           margin: 0;
         }
