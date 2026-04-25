@@ -11,7 +11,7 @@ const CATEGORIES = [
     color: "#a78bfa",
     glow: "rgba(124,58,237,0.22)",
     skills: [
-      { name: "React / Next.js", level: 90 },
+      { name: "React / Next.js", level: 80 },
       { name: "TypeScript",      level: 82 },
       { name: "HTML & CSS",      level: 95 },
       { name: "Tailwind CSS",    level: 88 },
@@ -36,8 +36,8 @@ const CATEGORIES = [
     color: "#fbbf24",
     glow: "rgba(245,158,11,0.18)",
     skills: [
-      { name: "UI/UX Design",    level: 88 },
-      { name: "Brand Identity",  level: 85 },
+      { name: "UI/UX Design",    level: 78 },
+      { name: "Photoshop",       level: 95 },
       { name: "Figma",           level: 90 },
       { name: "Motion Design",   level: 76 },
       { name: "Typography",      level: 84 },
@@ -49,9 +49,9 @@ const CATEGORIES = [
     color: "#34d399",
     glow: "rgba(52,211,153,0.15)",
     skills: [
-      { name: "Blender 3D",      level: 70 },
+      { name: "Gemini",      level: 0 },
       { name: "Claude / GPT",    level: 85 },
-      { name: "Photoshop",       level: 80 },
+      { name: "Photoshop & Adobe Softwares",       level: 80 },
       { name: "Git / GitHub",    level: 85 },
     ],
   },
