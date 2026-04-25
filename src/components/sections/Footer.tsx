@@ -19,7 +19,7 @@ export function Footer() {
               <span className="relative inline-flex h-2 w-2 rounded-full bg-violet-500" />
             </span>
             <span className="font-sans text-sm font-semibold tracking-tight text-white">
-              Khileshwar<span className="text-violet-400">.</span>
+              EternitySoul<span className="text-violet-400">.</span>
             </span>
           </a>
 
@@ -52,7 +52,7 @@ export function Footer() {
         {/* Bottom row */}
         <div className="mt-10 flex flex-col gap-2 border-t border-white/5 pt-8 md:flex-row md:items-center md:justify-between">
           <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-700">
-            &copy; 2025 Khileshwar Dewangan — All rights reserved
+            &copy; 2025 EternitySoul — All rights reserved
           </span>
           <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-zinc-700">
             Creative Developer &amp; Designer

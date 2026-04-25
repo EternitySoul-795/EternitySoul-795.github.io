@@ -2,11 +2,12 @@
 
 import { useState, useRef } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight, EnvelopeSimple, GithubLogo, InstagramLogo } from "@phosphor-icons/react";
+import { ArrowUpRight, EnvelopeSimple, GithubLogo, InstagramLogo, LinkedinLogo} from "@phosphor-icons/react";
 
 const SOCIALS = [
-  { label: "GitHub",    icon: GithubLogo,    href: "https://github.com/surajdewangan" },
-  { label: "Instagram", icon: InstagramLogo, href: "https://instagram.com/surajdewangan" },
+  { label: "GitHub",    icon: GithubLogo,    href: "https://github.com/eternitysoul-795" },
+  { label: "Instagram", icon: InstagramLogo, href: "https://instagram.com/eternity.soul_795" },
+  { label: "LinkedIn",  icon: LinkedinLogo,  href: "https://linkedin.com/in/khileshwar-dewangan-795official?" },
   { label: "Email",     icon: EnvelopeSimple, href: "mailto:khileshwar.uiux@gmail.com" },
 ];
 

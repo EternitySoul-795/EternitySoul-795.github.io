@@ -185,7 +185,7 @@ export function Hero() {
         {/* Year label */}
         <div className="absolute right-6 top-20 z-20 md:right-10 md:top-24">
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-zinc-600">
-            Portfolio 2025
+            _
           </span>
         </div>
 
