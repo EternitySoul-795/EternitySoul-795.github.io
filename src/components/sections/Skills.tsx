@@ -49,7 +49,7 @@ const CATEGORIES = [
     color: "#34d399",
     glow: "rgba(52,211,153,0.15)",
     skills: [
-      { name: "Gemini",      level: 0 },
+      { name: "Gemini",      level: 95 },
       { name: "Claude / GPT",    level: 85 },
       { name: "Photoshop & Adobe Softwares",       level: 80 },
       { name: "Git / GitHub",    level: 85 },
